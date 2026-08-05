@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import '../App.css';
-
+import "../App.css";
 
 const navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
-  const [isNavVisible, setisNavVisible] = useState(false)
-  const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+  const [isNavVisible, setisNavVisible] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     let lastScrollTop = 0;
     let isScrollActive = false;
 
     const handleScroll = () => {
-      const currentScroll = window.YOffset;;
+      const currentScroll = window.pageYOffset;
 
       setScrolled(currentScroll > 50);
       setisNavVisible(currentScroll <= lastScrollTop);
@@ -34,12 +32,31 @@ const navbar = () => {
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleResize);
+      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
 
-    
-  }, [])
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header
@@ -52,38 +69,37 @@ const navbar = () => {
         </div>
 
         <ul className="nav-menu">
-          <Link to="/" className="Link">
-            <li className={location.pathname === "/" ? "active" : ""}>
-            Home</li>
-          </Link>
-          <Link to="/about" className="Link">
-            <li className={location.pathname === "/about" ? "active" : ""}>
+          <a href="#home" className="Link">
+            <li className={activeSection === "home" ? "active" : ""}>Home</li>
+          </a>
+
+          <a href="#services" className="Link">
+            <li className={activeSection === "services" ? "active" : ""}>
               Services
             </li>
-          </Link>
-          <Link to="/Resources" className="Link">
-            <li className={location.pathname === "/resources" ? "active" : ""}>
-              About
-            </li>
-          </Link>
-          <Link to="/contact" className="Link">
-            <li className={location.pathname === "/contact" ? "active" : ""}>
+          </a>
+
+          <a href="#about" className="Link">
+            <li className={activeSection === "about" ? "active" : ""}>About</li>
+          </a>
+
+          <a href="#skills" className="Link">
+            <li className={activeSection === "skills" ? "active" : ""}>
               Skill
             </li>
-          </Link>
-          <Link to="/events" className="Link">
-            <li className={location.pathname === "/events" ? "active" : ""}>
+          </a>
+
+          <a href="#projects" className="Link">
+            <li className={activeSection === "projects" ? "active" : ""}>
               Project
             </li>
-          </Link>
-
+          </a>
         </ul>
-        
-        
-  <div className="nav-button">
-            <button className="btn">Let's talk</button>
-            <i></i>
-          </div>
+
+        <div className="nav-button">
+          <button className="btn">Let's talk</button>
+          <i></i>
+        </div>
       </nav>
     </header>
   );

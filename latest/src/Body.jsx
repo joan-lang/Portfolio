@@ -5,16 +5,33 @@ import Aboutme from './Aboutme';
 import Skill from './Skill';
 import Projects from "./Projects";
 
+
 const Body = () => {
   return (
-   <>
-      <Mainbody/>
-           <Secondbody/>
-           <Aboutme/>
-           <Skill/>
-           <Projects/>
-   </>
-  )
-}
+    <main className="container">
 
-export default Body
+      <section id="home">
+        <Mainbody />
+      </section>
+
+      <section id="services">
+        <Secondbody />
+      </section>
+
+      <section id="about">
+        <Aboutme />
+      </section>
+
+      <section id="skills">
+        <Skill />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+    </main>
+  );
+};
+
+export default Body;

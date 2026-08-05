@@ -1,0 +1,19 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+}
+
+.container{
+    height:100vh;
+    overflow-y:auto;
+    scroll-snap-type:y mandatory;
+}
+
+.container section{
+    min-height:100vh;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+}
