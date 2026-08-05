@@ -1,5 +1,5 @@
 import React from 'react'
-import Mainbody from "./MainBody";
+import Mainbody from "./Mainbody";
 import  Secondbody  from "./Secondbody";
 import Aboutme from './Aboutme';
 import Skill from './Skill';
