@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-
+import Picture from "./assets/picture.jpeg";
 
 export const Mainbody = () => {
   return (
@@ -26,7 +26,7 @@ export const Mainbody = () => {
       </div>
 
       <div className="hero">
-        <img src="fine-removebg-preview.png" alt="Person" />
+       <img src={Picture} alt="Joan" />
       </div>
     </div>
   );
