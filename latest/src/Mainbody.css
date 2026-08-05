@@ -1,76 +1,53 @@
-img {
-  max-width: 100%;
-  height: auto;
-}
+/* HERO SECTION */
 
-/* MAIN HERO SECTION */
 .Firstpage {
-  width: 85%;
-  margin: 90px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
+  max-width: 1250px;
+  margin: 120px auto 0;
+  padding: 0 80px;
+}
+
+.top {
+  width: 50%;
+}
+
+.name {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.front {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.fr {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 0.95;
+  margin-top: 18px;   /* spacing between Front-End and Developer */
+  margin-bottom: 25px;
 }
 
 .down {
-  flex: 1;
-  max-width: 500px;
+  width: 470px;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 30px;
 }
-
-.hero {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.hero img {
-  width: 420px;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* TEXT */
-
-.down h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.front{
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 1;
-    margin: 0;
-}
-
-.fr{
-    font-size: 72px;
-    font-weight: 700;
-    line-height: 1;
-    margin-top: 18px;   /* <-- THIS is the spacing you're looking for */
-}
-
-.down p {
-  margin-top: 18px;
-  line-height: 1.6;
-  width: 420px;
-  font-size: 20px;
-}
-
-/* BUTTON */
 
 .cv {
-  margin-top: 30px;
   border: 1px solid white;
   background: grey;
   color: white;
-  padding: 12px 25px;
-  border-radius: 10px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size: 20px;
   cursor: pointer;
-  font-size: 18px;
 }
 
 .cv:hover {
@@ -78,12 +55,10 @@ img {
   color: black;
 }
 
-/* SOCIALS */
-
 .socials {
   display: flex;
-  gap: 18px;
-  margin-top: 45px;
+  gap: 15px;
+  margin-top: 35px;
 }
 
 .socials a {
@@ -96,9 +71,25 @@ img {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .socials a:first-child {
   border-radius: 8px;
+}
+
+/* IMAGE */
+
+.hero {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -70px;
+}
+
+.hero img {
+  width: 520px;
+  height: auto;
+  object-fit: contain;
 }
