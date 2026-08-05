@@ -43,6 +43,7 @@ align-items: center;
   height: 40px;
   font-size: 20px;
   cursor: pointer;
+  margin-top: -40px;
 }
 
 .live:hover{
