@@ -1,19 +1,43 @@
-html{
-    scroll-behavior:smooth;
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin:0;
+/* ---------- HTML & BODY ---------- */
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.container{
-    height:100vh;
-    overflow-y:auto;
-    scroll-snap-type:y mandatory;
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  scroll-snap-type: y mandatory;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.container section{
-    min-height:100vh;
-    scroll-snap-align:start;
-    scroll-snap-stop:always;
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- SECTIONS ---------- */
+.container section {
+  width: 100%;
+  min-height: 100vh;
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
