@@ -1,91 +1,102 @@
-
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
 }
 
-/* BODY */
-
+/* MAIN HERO SECTION */
 .Firstpage {
+  width: 85%;
+  margin: 90px auto 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin-left: 145px;
-  margin-right: 120px;
-  margin-top: 120px;
-
-  gap: 60px;
-}
-
-.front {
-  font-size: 50px;
-  margin-top: 10px;
-  line-height: 1;
-}
-
-.fr {
-  font-size: 50px;
-  margin-top: -25px;
-  line-height: 1;
+  gap: 80px;
 }
 
 .down {
-  width: 440px;
-  margin-top: 15px;
-  line-height: 1.5;
+  flex: 1;
+  max-width: 500px;
 }
 
-.cv {
-  border: 1px solid white;
-  color: #e5e5e5;
-  background-color: grey;
-  padding: 10px;
-  border-radius: 10px;
-  height: 40px;
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero img {
+  width: 430px;
+  max-width: 100%;
+}
+
+/* TEXT */
+
+.down h3 {
   font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.front {
+  font-size: 72px;
+  line-height: .9;
+  font-weight: 700;
+  margin: 0;
+}
+
+.fr {
+  font-size: 72px;
+  line-height: .9;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.down p {
+  margin-top: 18px;
+  line-height: 1.6;
+  width: 420px;
+  font-size: 20px;
+}
+
+/* BUTTON */
+
+.cv {
+  margin-top: 30px;
+  border: 1px solid white;
+  background: grey;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 20px;
+  font-size: 18px;
 }
 
 .cv:hover {
-  background-color: #e5e5e5;
-  color: #0a0a0a;
+  background: white;
+  color: black;
 }
+
+/* SOCIALS */
 
 .socials {
   display: flex;
-  gap: 15px;
-  margin-top: 35px;
+  gap: 18px;
+  margin-top: 45px;
 }
 
 .socials a {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background: white;
   color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-size: 18px;
 }
 
 .socials a:first-child {
-  border-radius: 6px;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.hero img {
-  width: 420px;
-  max-width: 100%;
-  object-fit: contain;
+  border-radius: 8px;
 }
