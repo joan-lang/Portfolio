@@ -67,34 +67,31 @@ margin-top: -10px;
       display: block;
       text-decoration: none;
     }
-
+     
     li {
-        position: relative;
-        padding-bottom: 5px;
-      font-size: 18px;
-      font-weight: 600px;
-  
+  position: relative;
+  padding-bottom: 5px;
 
-      &::after {
-        content: " ";
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: white;
-        transition: width 0.5s ease-in-out;
-      }
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+  }
 
-      &:hover::after,
-      &:active::after {
-        width: 90%;
-      }
+  &:hover::after {
+    width: 100%;
+  }
 
-      &.active::after {
-        width: 50%;
-      }
-
-    }
+  &.active::after {
+    width: 100%;
+  }
+}
   }
 
 .Link{
