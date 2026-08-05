@@ -1,0 +1,123 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 10px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+
+  &.scrolled {
+width:90%;
+background: rgba(211, 198, 198, 0.5);
+padding: 0 30px;
+margin: 0 auto;
+margin-top: 10px;
+border-radius: 50px;
+backdrop-filter: blur(10px);
+  }
+  
+/* &nav-hidden{
+transform: translateY(-100%);
+opacity: 0
+} */ 
+  .nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: transparent;
+
+    .nav-logo {
+      display: flex;
+      border: 1px solid #5A5A5A;
+    background-color: #161616;
+      padding: 10px 10px;
+      height: 20px;
+      width: 40px;
+      color: white;
+      margin-top: -50px;
+      text-align: center;
+      border-radius: 50%;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      font-size: 20px;
+ cursor: pointer;
+ margin-left: 100px;
+      }
+    }
+  }
+
+  .nav-menu {
+    border: 1px solid grey;
+    padding: 10px;
+    width: 410px;
+    height: 50px;
+    color: #e5e5e5;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+margin-top: -10px;
+
+    a {
+      padding: 20px 0;
+      display: block;
+      text-decoration: none;
+    }
+
+    li {
+        position: relative;
+        padding-bottom: 5px;
+      font-size: 18px;
+      font-weight: 600px;
+  
+
+      &::after {
+        content: " ";
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width 0.5s ease-in-out;
+      }
+
+      &:hover::after,
+      &:active::after {
+        width: 90%;
+      }
+
+      &.active::after {
+        width: 50%;
+      }
+
+    }
+  }
+
+.Link{
+  color: #e5e5e5;
+
+}
+
+.btn {
+  border: 1px solid white;
+  color: #e5e5e5;
+  background-color: grey;
+  padding: 10px;
+  margin-top: -90px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e5e5e5;
+  color: #0a0a0a;
+}

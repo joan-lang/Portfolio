@@ -1,0 +1,64 @@
+.Projects{
+    margin-top: 150px;
+    justify-content: center;
+   align-items: center;
+}
+
+.pv{
+    margin-left: 650px;
+font-size: 40px;
+}
+
+.Show{
+    margin-left: 490px;
+margin-top: -8px;
+}
+
+.round{
+    display: flex;
+    gap: 38px;
+justify-content: center;
+align-items: center;
+
+}
+
+.WEB{
+    cursor:pointer;
+    border: 1px solid grey;
+    width: 250px;
+    height: 450px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.live{
+    border: 1px solid white;
+  color: #e5e5e5;
+  background-color: grey;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.live:hover{
+    background-color: #e5e5e5;
+  color: #0a0a0a;
+}
+
+.mk{
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+.upanddown{
+  margin-top: 40px;
+  height: 90vh;
+  overflow-y: auto;
+  padding-right: 5px;
+padding-left: 10px;
+}

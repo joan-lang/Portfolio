@@ -1,0 +1,89 @@
+.About{
+   justify-content: center;
+   align-items: center;
+   margin-top: 110px;
+}
+
+.ab{
+    margin-left: 610px;
+}
+
+.be{
+   font-size: 16px;
+   width: 1200px;
+   margin-left: 100px;
+}
+
+.me{
+    margin-left: 610px;
+    margin-top: 80px;
+}
+
+.bes{
+   font-size: 16px;
+   width: 1200px;
+   margin-left: 60px;
+   margin-top: 10px;   
+}
+
+.approach-container{
+  width: 100%;
+  padding: 40px;
+  color: white;
+}
+
+.approach-container h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.approach-cards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 25px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+}
+
+.number{
+  background: white;
+  color: black;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.card p{
+  font-size: 20px;
+}
+
+.plus{
+  display: flex;
+  gap:35px;
+  margin-left: 433px;
+  margin-top: -30px;
+}
+
+.mo{
+  text-align: center;
+}

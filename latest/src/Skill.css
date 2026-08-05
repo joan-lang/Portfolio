@@ -1,0 +1,163 @@
+.skill{
+    margin-top: 110px;
+    justify-content: center;
+   align-items: center;
+}
+
+.mySkill{
+margin-left: 650px;
+font-size: 40px;
+}
+
+.Sub{
+margin-left: 520px;
+margin-top: -10px;
+}
+
+.Coreskills{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+     cursor: text;
+    margin-left: 60px;
+}
+
+.a{
+     border: 1px solid #5A5A5A;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.b{
+       border: 1px solid #5A5A5A;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    width:200px ;
+}
+
+.UI{
+   border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 110px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.Responsive{
+      border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 200px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.COM{
+      border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 220px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.HTML{
+      border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 50px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.CSS{
+     border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 50px;
+padding: 10px;
+border-radius: 20px; 
+margin-left: 100px;  
+margin-top: -62px;
+}
+
+.JS{
+       border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 50px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.wp{
+     border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 110px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.FIG{
+    border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 60px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.photo{
+      border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 90px;
+padding: 10px;
+border-radius: 20px; 
+margin-left: 100px;  
+margin-top: -62px;
+}
+
+.ill{
+border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 110px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.Git{
+border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 70px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.Net{
+  border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 70px;
+padding: 10px;
+border-radius: 20px;  
+align-items: center;
+}
+
+.GS{
+   border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 70px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.Tions{
+     border: 1px solid #5A5A5A;
+    background-color: #161616;
+width: 140px;
+padding: 10px;
+border-radius: 20px; 
+}
+
+.a:hover{
+      background-color: #262626;
+}
+
+.b:hover{
+      background-color: #262626;
+}
