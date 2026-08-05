@@ -16,15 +16,15 @@ const Projects = () => {
     <img src="" alt="" className="picture" />
     <div className="mk">
     <h2 className="favour">
-        Fervour Blooms
+      IsokMarket
     </h2>
 
     <h4 className="coMM">
-      E-commerce Website
+     MERN E-commerce Marketplace
     </h4>
 
     <h4 className="MODE">
-       A modern UI design concept for an online flower shop. 
+      A full-stack marketplace for buying and selling thrift fashion items with secure authentication and role-based access.
     </h4>
 
     <button className="live">Live Website</button>
@@ -35,15 +35,15 @@ const Projects = () => {
     <img src="" alt="" className="picture" />
      <div className="mk">
     <h2 className="favour">
-        Hubble Insights
+        HaleTech Services
     </h2>
 
     <h4 className="coMM">
-   Astronomy Website
+Corporate Website
     </h4>
 
     <h4 className="MODE">
-       A visual astronomy showcase with deep-space images.
+     Contributed to the development of responsive front-end components for a modern technology company website.
     </h4>
 
     <button className="live">Live Website</button>
@@ -55,35 +55,15 @@ const Projects = () => {
     <img src="" alt="" className="picture" />
     <div className="mk">
     <h2 className="favour">
-      Dart Creatives
+      Portfolio Website
     </h2>
 
     <h4 className="coMM">
-Digital Marketing Agency
+Personal Portfolio
     </h4>
 
     <h4 className="MODE">
-     A refined agency website with a strong visual identity.
-    </h4>
-
-    <button className="live">Live Website</button>
-    </div>
-</div>
-
-
-<div className="WEB">
-    <img src="" alt="" className="picture" />
-     <div className="mk">
-    <h2 className="favour">
-     Bansal FineFoods
-    </h2>
-
-    <h4 className="coMM">
-E-commerce Website
-    </h4>
-
-    <h4 className="MODE">
-   A fresh, earthy layout designed for showcasing food grains.
+     A responsive portfolio showcasing my projects, technical skills, and experience as a MERN Stack Developer.
     </h4>
 
     <button className="live">Live Website</button>
