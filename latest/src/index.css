@@ -1,43 +1,26 @@
-/* ---------- RESET ---------- */
+/* ---------- Global Styles ---------- */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------- HTML & BODY ---------- */
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+html {
   scroll-behavior: smooth;
+
+  /* Hide scrollbar in Firefox */
+  scrollbar-width: none;
 }
 
-/* ---------- MAIN CONTAINER ---------- */
-.container {
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto;
+body {
   overflow-x: hidden;
 
-  scroll-snap-type: y mandatory;
-
-  /* Hide scrollbar */
-  scrollbar-width: none;
+  /* Hide scrollbar in old Edge/IE */
   -ms-overflow-style: none;
 }
 
-.container::-webkit-scrollbar {
+/* Hide scrollbar in Chrome, Edge & Safari */
+body::-webkit-scrollbar {
   display: none;
-}
-
-/* ---------- SECTIONS ---------- */
-.container section {
-  width: 100%;
-  min-height: 100vh;
-
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
