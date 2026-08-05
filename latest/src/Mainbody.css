@@ -94,16 +94,16 @@
 }
 
 /* RIGHT SIDE */
-
 .hero {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .hero img {
-    width: 380px;      /* smaller */
-    height: auto;
-    object-fit: contain;
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
