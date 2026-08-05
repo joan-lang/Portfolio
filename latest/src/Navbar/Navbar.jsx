@@ -13,7 +13,7 @@ const navbar = () => {
     let isScrollActive = false;
 
     const handleScroll = () => {
-      const currentScroll = window.pageYOFFset;
+      const currentScroll = window.YOffset;;
 
       setScrolled(currentScroll > 50);
       setisNavVisible(currentScroll <= lastScrollTop);
@@ -43,7 +43,7 @@ const navbar = () => {
 
   return (
     <header
-      className={`header ${scrolled ? "scrolled" : ""}${isNavVisible ? "nav- visible" : "nav-hidden"}`}
+      className={`header ${scrolled ? "scrolled" : ""}${isNavVisible ? "nav-visible" : "nav-hidden"}`}
     >
       <nav className="nav-main">
         <div className="nav-logo">
