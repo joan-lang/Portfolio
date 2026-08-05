@@ -37,16 +37,18 @@ img {
   margin-bottom: 15px;
 }
 
-.front {
-  font-size: 72px;
-  line-height: .9;
-  font-weight: 700;
-  margin: 0;
+.front{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
 }
 
-.fr {
-  font-size: 50px;
-  margin-top: -15px;
+.fr{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 18px;   /* <-- THIS is the spacing you're looking for */
 }
 
 .down p {
