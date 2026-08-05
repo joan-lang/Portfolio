@@ -1,42 +1,32 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 
-const navbar = () => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [isNavVisible, setisNavVisible] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
 
+  // Navbar scroll effect
   useEffect(() => {
     let lastScrollTop = 0;
-    let isScrollActive = false;
 
     const handleScroll = () => {
       const currentScroll = window.pageYOffset;
 
       setScrolled(currentScroll > 50);
-      setisNavVisible(currentScroll <= lastScrollTop);
+      setIsNavVisible(currentScroll <= lastScrollTop);
+
       lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     };
 
-    const handleResize = () => {
-      if (window.innerWidth > 768 && !isNavVisible) {
-        window.addEventListener("scroll", handleScroll);
-        isScrollActive = true;
-      } else {
-        window.addEventListener("scroll", handleScroll);
-        isScrollActive = true;
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  // Detect active section
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -50,7 +40,7 @@ const navbar = () => {
       },
       {
         threshold: 0.6,
-      },
+      }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -60,17 +50,20 @@ const navbar = () => {
 
   return (
     <header
-      className={`header ${scrolled ? "scrolled" : ""}${isNavVisible ? "nav-visible" : "nav-hidden"}`}
+      className={`header ${scrolled ? "scrolled" : ""} ${
+        isNavVisible ? "nav-visible" : "nav-hidden"
+      }`}
     >
       <nav className="nav-main">
         <div className="nav-logo">
-          {/* <img src="" alt="Logo" /> */}
           <h3>A.J</h3>
         </div>
 
         <ul className="nav-menu">
           <a href="#home" className="Link">
-            <li className={activeSection === "home" ? "active" : ""}>Home</li>
+            <li className={activeSection === "home" ? "active" : ""}>
+              Home
+            </li>
           </a>
 
           <a href="#services" className="Link">
@@ -80,29 +73,30 @@ const navbar = () => {
           </a>
 
           <a href="#about" className="Link">
-            <li className={activeSection === "about" ? "active" : ""}>About</li>
+            <li className={activeSection === "about" ? "active" : ""}>
+              About
+            </li>
           </a>
 
           <a href="#skills" className="Link">
             <li className={activeSection === "skills" ? "active" : ""}>
-              Skill
+              Skills
             </li>
           </a>
 
           <a href="#projects" className="Link">
             <li className={activeSection === "projects" ? "active" : ""}>
-              Project
+              Projects
             </li>
           </a>
         </ul>
 
         <div className="nav-button">
-          <button className="btn">Let's talk</button>
-          <i></i>
+          <button className="btn">Let's Talk</button>
         </div>
       </nav>
     </header>
   );
 };
 
-export default navbar;
+export default Navbar;
