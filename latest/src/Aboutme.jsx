@@ -44,12 +44,12 @@ const Aboutme = () => {
           <h4 className="te">Years Of Experience</h4>
         </div>
         <div className="fin">
-          <h1 className="mo">15+</h1>
+          <h1 className="mo">4+</h1>
 
           <h4 className="te">Projects Completed</h4>
         </div>
         <div className="fin">
-          <h1 className="mo">05+</h1>
+          <h1 className="mo">03+</h1>
 
           <h4 className="te">Clients Served</h4>
         </div>
