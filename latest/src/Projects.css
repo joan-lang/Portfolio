@@ -1,122 +1,97 @@
-/* =========================
-   PROJECTS
-========================= */
-
 .Projects {
-    margin-top: 140px;
-    padding: 0 40px;
+  margin-top: 120px;
+  padding: 0 80px;
 }
 
 .pv {
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .Show {
-    text-align: center;
-    font-size: 18px;
-    color: #d6d6d6;
-    margin-bottom: 60px;
+  text-align: center;
+  color: #cfcfcf;
+  margin-bottom: 50px;
 }
 
-/* =========================
-   PROJECT CARDS
-========================= */
-
 .round {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .WEB {
-    width: 300px;
-    min-height: 500px;
-
-    background: #161616;
-    border: 1px solid #4d4d4d;
-    border-radius: 20px;
-
-    overflow: hidden;
-
-    transition: .3s ease;
+  width: 340px;
+  background: #181818;
+  border: 1px solid #404040;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: .3s;
 }
 
 .WEB:hover {
-    transform: translateY(-6px);
-    border-color: #7a7a7a;
+  transform: translateY(-8px);
+  border-color: white;
 }
 
-/* =========================
-   IMAGE
-========================= */
-
-.picture {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    background: #252525;
+.project-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
 }
-
-/* =========================
-   CONTENT
-========================= */
 
 .mk {
-    padding: 20px;
+  padding: 20px;
 }
 
-.favour {
-    font-size: 24px;
-    margin-bottom: 10px;
+.mk h2 {
+  margin-bottom: 8px;
+  font-size: 28px;
 }
 
 .coMM {
-    color: #bdbdbd;
-    font-size: 15px;
-    margin-bottom: 18px;
+  color: #bdbdbd;
+  margin-bottom: 15px;
 }
 
 .MODE {
-    color: #d6d6d6;
-    line-height: 1.7;
-    font-size: 15px;
-    margin-bottom: 30px;
+  line-height: 1.7;
+  color: #d9d9d9;
+  min-height: 110px;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.live,
+.github {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
 
 .live {
-    width: 100%;
-    padding: 12px;
-
-    border: 1px solid white;
-    border-radius: 10px;
-
-    background: transparent;
-    color: white;
-
-    font-size: 16px;
-    cursor: pointer;
-
-    transition: .3s;
+  background: white;
+  color: black;
 }
 
 .live:hover {
-    background: white;
-    color: black;
+  background: #d8d8d8;
 }
 
-/* =========================
-   WRAPPER
-========================= */
+.github {
+  background: #2e2e2e;
+  color: white;
+}
 
-.upanddown {
-    margin-top: 40px;
-    padding: 0 20px;
+.github:hover {
+  background: #444;
 }
