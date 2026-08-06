@@ -23,7 +23,7 @@ const Secondbody = () => {
     </div>
 
     <div className="box1">
-         <h2 className="ski">Frontend Development</h2>
+         <h2 className="ski">Full-Stack developer</h2>
         <h3 className="skii">Responsive interfaces using HTML, CSS, and JavaScript for clean, consistent, reliable performance.</h3>
          <p className="line"></p>
 
