@@ -2,17 +2,18 @@ import React from "react";
 
 const Skill = () => {
   return (
-    <section className="skill">
-      <h1 className="mySkill">Skills</h1>
-      <p className="Sub">Crafting seamless UI/UX and clean code</p>
+    <section className="skills-section">
+      <h1 className="skills-title">Skills</h1>
+      <p className="skills-subtitle">
+        Crafting seamless UI/UX and clean code
+      </p>
 
-      <div className="Coreskills">
+      <div className="skills-grid">
 
-        {/* Core Skills */}
-        <div className="card">
+        <div className="skill-card">
           <h2>Core Skills</h2>
 
-          <div className="tags">
+          <div className="skill-tags">
             <span>UI/UX Layout</span>
             <span>Frontend Dev</span>
             <span>Responsive Web Design</span>
@@ -20,11 +21,10 @@ const Skill = () => {
           </div>
         </div>
 
-        {/* Frontend Tech */}
-        <div className="card">
+        <div className="skill-card">
           <h2>Frontend Tech</h2>
 
-          <div className="tags">
+          <div className="skill-tags">
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
@@ -32,22 +32,20 @@ const Skill = () => {
           </div>
         </div>
 
-        {/* Design Tools */}
-        <div className="card">
+        <div className="skill-card">
           <h2>Design Tools</h2>
 
-          <div className="tags">
+          <div className="skill-tags">
             <span>Figma</span>
             <span>Photoshop</span>
             <span>Illustrator</span>
           </div>
         </div>
 
-        {/* Tools & Interaction */}
-        <div className="card">
+        <div className="skill-card">
           <h2>Tools & Interaction</h2>
 
-          <div className="tags">
+          <div className="skill-tags">
             <span>GitHub</span>
             <span>Netlify</span>
             <span>GSAP</span>
