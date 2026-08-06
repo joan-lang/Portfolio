@@ -1,63 +1,139 @@
 .skill {
-  margin-top: 120px;
+    margin-top: 130px;
 }
 
 .mySkill {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 700;
+    text-align: center;
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .Sub {
-  text-align: center;
-  margin-top: -15px;
-  font-size: 18px;
-  color: #d4d4d4;
+    text-align: center;
+    font-size: 18px;
+    color: #d9d9d9;
+    margin-bottom: 55px;
 }
+
+/* Cards */
 
 .Coreskills {
-  max-width: 1250px;
-  margin: 60px auto 0;
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
-.card {
-  width: 250px;
-  min-height: 360px;
-  background: #161616;
-  border: 1px solid #5A5A5A;
-  border-radius: 20px;
-  padding: 22px;
-  transition: 0.3s;
+.a,
+.b {
+    width: 240px;
+    height: 360px;
+    border: 1px solid #5A5A5A;
+    background-color: #161616;
+    border-radius: 18px;
+    padding: 22px;
+    transition: .3s;
 }
 
-.card:hover {
-  background: #242424;
+.a:hover,
+.b:hover {
+    background: #242424;
 }
 
-.card h2 {
-  font-size: 20px;
-  margin-bottom: 25px;
+.too,
+.tools,
+.INT {
+    font-size: 20px;
+    margin-bottom: 28px;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+/* Pills */
+
+.UI,
+.Responsive,
+.COM,
+.HTML,
+.CSS,
+.JS,
+.wp,
+.FIG,
+.photo,
+.ill,
+.Git,
+.Net,
+.GS,
+.Tions {
+    border: 1px solid #5A5A5A;
+    background: #161616;
+    border-radius: 999px;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
-.tags span {
-  border: 1px solid #5A5A5A;
-  border-radius: 999px;
-  padding: 10px 18px;
-  background: #1b1b1b;
-  font-size: 15px;
-  transition: .3s;
+/* Widths */
+
+.UI {
+    width: 95px;
 }
 
-.tags span:hover {
-  background: #2b2b2b;
+.Responsive {
+    width: 165px;
+}
+
+.COM {
+    width: 190px;
+}
+
+.HTML {
+    width: 45px;
+}
+
+.CSS {
+    width: 45px;
+    margin-left: 95px;
+    margin-top: -58px;
+}
+
+.JS {
+    width: 35px;
+}
+
+.wp {
+    width: 95px;
+}
+
+.FIG {
+    width: 55px;
+}
+
+.photo {
+    width: 95px;
+    margin-left: 95px;
+    margin-top: -58px;
+}
+
+.ill {
+    width: 95px;
+}
+
+.Git {
+    width: 70px;
+}
+
+.Net {
+    width: 70px;
+}
+
+.GS {
+    width: 55px;
+}
+
+.Tions {
+    width: 125px;
 }
