@@ -1,7 +1,7 @@
 import React from "react";
 import Picture from "./assets/picture.jpeg";
-import HaleTech from "./assets/haletech.png";
-import Portfolio from "./assets/portfolio.png";
+import HaleTech from "./assets/HaleTech pic.png";
+import Portfolio from "./assets/Portfolio Pic.png";
 
 const Projects = () => {
   const projects = [
@@ -11,26 +11,20 @@ const Projects = () => {
       type: "MERN E-commerce Marketplace",
       description:
         "A full-stack marketplace for buying and selling thrift fashion items with secure authentication, seller dashboards, and role-based access control.",
-      live: "https://your-live-link.com",
-      github: "https://github.com/joan-lang/isOkMarket",
     },
     {
       image: HaleTech,
       title: "HaleTech Services",
       type: "Corporate Website",
       description:
-        "Contributed to building responsive frontend components and modern user interfaces for a technology company's website.",
-      live: "https://haletech.com",
-      github: "",
+        "Contributed to building responsive front-end components for a modern technology company's website.",
     },
     {
       image: Portfolio,
       title: "Portfolio Website",
       type: "Personal Portfolio",
       description:
-        "A modern portfolio built with React showcasing my projects, technical skills, and experience as a Full Stack Developer.",
-      live: "https://yourportfolio.com",
-      github: "https://github.com/joan-lang/Portfolio",
+        "A modern React portfolio showcasing my projects, technical skills, and experience as a Full Stack Developer.",
     },
   ];
 
@@ -38,7 +32,7 @@ const Projects = () => {
     <section className="Projects">
       <h1 className="pv">Projects</h1>
       <p className="Show">
-        A showcase of clean, modern, responsive websites
+        A showcase of clean, modern, responsive websites.
       </p>
 
       <div className="round">
@@ -57,25 +51,9 @@ const Projects = () => {
 
               <p className="MODE">{project.description}</p>
 
-              <div className="buttons">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="live">Live Website</button>
-                </a>
-
-                {project.github && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="github">GitHub</button>
-                  </a>
-                )}
-              </div>
+              <button className="comingSoon" disabled>
+                Coming Soon
+              </button>
             </div>
           </div>
         ))}
