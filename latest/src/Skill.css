@@ -1,164 +1,63 @@
-.skill{
-    margin-top: 110px;
-    justify-content: center;
-   align-items: center;
+.skill {
+  margin-top: 120px;
 }
 
-.mySkill{
-    text-align: center;
-    font-size: 40px;
+.mySkill {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
 }
 
-.Sub{
-    text-align: center;
-    margin-top: -10px;
+.Sub {
+  text-align: center;
+  margin-top: -15px;
+  font-size: 18px;
+  color: #d4d4d4;
 }
 
-.Coreskills{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    max-width: 1200px;
+.Coreskills {
+  max-width: 1250px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
 }
 
-.a{
-     border: 1px solid #5A5A5A;
-    background-color: #161616;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.b{
-       border: 1px solid #5A5A5A;
-    background-color: #161616;
-    padding: 20px;
-    border-radius: 10px;
-    width:200px ;
-}
-
-.UI{
-   border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 110px;
-padding: 10px;
-border-radius: 20px;
-}
-
-.Responsive{
-      border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 200px;
-padding: 10px;
-border-radius: 20px;
-}
-
-.COM{
-      border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 220px;
-padding: 10px;
-border-radius: 20px; 
-}
-
-.HTML{
-      border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 50px;
-padding: 10px;
-border-radius: 20px; 
-}
-
-.CSS{
-     border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 50px;
-padding: 10px;
-border-radius: 20px; 
-margin-left: 100px;  
-margin-top: -62px;
-}
-
-.JS{
-       border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 50px;
-padding: 10px;
-border-radius: 20px; 
-}
-
-.wp{
-     border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 110px;
-padding: 10px;
-border-radius: 20px;
-}
-
-.FIG{
-    border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 60px;
-padding: 10px;
-border-radius: 20px; 
-}
-
-.photo{
-      border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 90px;
-padding: 10px;
-border-radius: 20px; 
-margin-left: 100px;  
-margin-top: -62px;
-}
-
-.ill{
-border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 110px;
-padding: 10px;
-border-radius: 20px;
-}
-
-.Git{
-border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 70px;
-padding: 10px;
-border-radius: 20px;
-}
-
-.Net{
+.card {
+  width: 250px;
+  min-height: 360px;
+  background: #161616;
   border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 70px;
-padding: 10px;
-border-radius: 20px;  
-align-items: center;
+  border-radius: 20px;
+  padding: 22px;
+  transition: 0.3s;
 }
 
-.GS{
-   border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 70px;
-padding: 10px;
-border-radius: 20px; 
+.card:hover {
+  background: #242424;
 }
 
-.Tions{
-     border: 1px solid #5A5A5A;
-    background-color: #161616;
-width: 140px;
-padding: 10px;
-border-radius: 20px; 
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-.a:hover{
-      background-color: #262626;
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.b:hover{
-      background-color: #262626;
+.tags span {
+  border: 1px solid #5A5A5A;
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: #1b1b1b;
+  font-size: 15px;
+  transition: .3s;
+}
+
+.tags span:hover {
+  background: #2b2b2b;
 }
