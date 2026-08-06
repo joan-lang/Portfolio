@@ -7,7 +7,7 @@ export const Mainbody = () => {
     <div className="Firstpage">
       <div className="top">
         <h2 className="name">I am Joan</h2>
-        <h1 className="front">Front-End</h1>
+        <h1 className="front">Full-Stack</h1>
         <h1 className="fr">Developer & Designer</h1>
         <p className="down">
          Blending thoughtful UI design with clean, responsive development to create websites that look great and perform flawlessly.

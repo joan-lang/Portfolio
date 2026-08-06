@@ -5,7 +5,7 @@ const Secondbody = () => {
 
     
  <div className="going-box">
-  <div className="Second">
+  <div className="second">
 <h1 className="htwo">Services</h1>
 <h3 className="ht">
     Designing clean scalable responsive websites
