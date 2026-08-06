@@ -6,11 +6,15 @@ const Aboutme = () => {
       <h1 className="ab">About Me</h1>
 
       <h3 className="be">
-        I’m a front-end developer and designer passionate about crafting clean,
-        intuitive, and responsive digital experiences. I focus on turning ideas
-        into <br />
-        <h3 className="bes">seamless interfaces by understanding user needs, designing
-        thoughtful UI layouts, and ensuring smooth interactions across devices.</h3>
+       I'm a Full Stack Developer passionate about building modern,
+        responsive, and user-friendly web applications. I specialize in
+        creating clean front-end experiences with React and developing
+        secure, scalable back-end solutions using Node.js, Express, and
+        MongoDB.<br />
+        <h3 className="bes">I focus on writing clean, maintainable code and building fast,
+        responsive applications that provide great user experiences. Every
+        project is developed with performance, scalability, and usability in
+        mind.</h3>
       </h3>
 
      <div className="approach-container">
