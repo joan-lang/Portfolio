@@ -1,61 +1,122 @@
-.Projects{
-    margin-top: 150px;
-    justify-content: center;
-   align-items: center;
+/* =========================
+   PROJECTS
+========================= */
+
+.Projects {
+    margin-top: 140px;
+    padding: 0 40px;
 }
 
-.pv{
+.pv {
     text-align: center;
-    font-size: 40px;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.Show{
+.Show {
     text-align: center;
-    margin-top: -8px;
+    font-size: 18px;
+    color: #d6d6d6;
+    margin-bottom: 60px;
 }
 
-.round{
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.round {
     display: flex;
-    gap: 16px;
-justify-content: center;
-align-items: center;
-
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
-.WEB{
-    cursor:pointer;
-    border: 1px solid grey;
-    width: 250px;
-    height: 450px;
+.WEB {
+    width: 300px;
+    min-height: 500px;
+
+    background: #161616;
+    border: 1px solid #4d4d4d;
     border-radius: 20px;
-    padding: 15px;
+
+    overflow: hidden;
+
+    transition: .3s ease;
 }
 
-.live{
+.WEB:hover {
+    transform: translateY(-6px);
+    border-color: #7a7a7a;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.picture {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    background: #252525;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.mk {
+    padding: 20px;
+}
+
+.favour {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.coMM {
+    color: #bdbdbd;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.MODE {
+    color: #d6d6d6;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.live {
+    width: 100%;
+    padding: 12px;
+
     border: 1px solid white;
-  color: #e5e5e5;
-  background-color: grey;
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius:10px ;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-}
+    border-radius: 10px;
 
-.live:hover{
-    background-color: #e5e5e5;
-  color: #0a0a0a;
-}
+    background: transparent;
+    color: white;
 
-.mk{
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 120px;
+
+    transition: .3s;
 }
 
-.upanddown{
-    margin-top:40px;
-    padding:0 10px;
+.live:hover {
+    background: white;
+    color: black;
+}
+
+/* =========================
+   WRAPPER
+========================= */
+
+.upanddown {
+    margin-top: 40px;
+    padding: 0 20px;
 }

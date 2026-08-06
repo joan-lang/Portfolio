@@ -1,80 +1,139 @@
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
   return (
+    <section className="projects-section">
+      <h1 className="projects-title">Projects</h1>
 
-    <div className="upanddown">
-   <div className="Projects">
-    <h1 className="pv">
-       Projects 
-    </h1>
-<h3 className="Show">
-    A showcase of clean, modern, responsive websites
-</h3>
-<div className="round">
-<div className="WEB">
-    <img src="" alt="" className="picture" />
-    <div className="mk">
-    <h2 className="favour">
-      IsokMarket
-    </h2>
+      <p className="projects-subtitle">
+        A showcase of clean, modern, responsive websites.
+      </p>
 
-    <h4 className="coMM">
-     MERN E-commerce Marketplace
-    </h4>
+      <div className="projects-grid">
 
-    <h4 className="MODE">
-      A full-stack marketplace for buying and selling thrift fashion items with secure authentication and role-based access.
-    </h4>
+        {/* Project 1 */}
 
-    <button className="live">Live Website</button>
-    </div>
-</div>
+        <div className="project-card">
+          <img src="" alt="IsokMarket" className="project-image" />
 
-<div className="WEB">
-    <img src="" alt="" className="picture" />
-     <div className="mk">
-    <h2 className="favour">
-        HaleTech Services
-    </h2>
+          <h2>IsokMarket</h2>
 
-    <h4 className="coMM">
-Corporate Website
-    </h4>
+          <h4>MERN E-commerce Marketplace</h4>
 
-    <h4 className="MODE">
-     Contributed to the development of responsive front-end components for a modern technology company website.
-    </h4>
+          <p>
+            A full-stack marketplace for buying and selling thrift fashion
+            items with secure authentication, seller dashboards and role-based
+            access control.
+          </p>
 
-    <button className="live">Live Website</button>
-    </div>
-</div>
+          <div className="project-buttons">
+            <a
+              href="https://yourwebsite.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="live">Live Website</button>
+            </a>
 
+            <a
+              href="https://github.com/yourusername/isokmarket"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="github">GitHub</button>
+            </a>
+          </div>
+        </div>
 
-<div className="WEB">
-    <img src="" alt="" className="picture" />
-    <div className="mk">
-    <h2 className="favour">
-      Portfolio Website
-    </h2>
+        {/* Project 2 */}
 
-    <h4 className="coMM">
-Personal Portfolio
-    </h4>
+        <div className="project-card">
+          <img src="" alt="HaleTech" className="project-image" />
 
-    <h4 className="MODE">
-     A responsive portfolio showcasing my projects, technical skills, and experience as a MERN Stack Developer.
-    </h4>
+          <h2>HaleTech Services</h2>
 
-    <button className="live">Live Website</button>
-    </div>
-</div>
+          <h4>Corporate Website</h4>
 
-</div>
+          <p>
+            Contributed to building responsive frontend components and modern
+            user interfaces for a technology company's website.
+          </p>
 
-   </div>
-   </div>
-  )
-}
+          <div className="project-buttons">
+            <a
+              href="https://haletech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="live">Live Website</button>
+            </a>
+          </div>
+        </div>
 
-export default Projects
+        {/* Project 3 */}
+
+        <div className="project-card">
+          <img src="" alt="Portfolio" className="project-image" />
+
+          <h2>Portfolio Website</h2>
+
+          <h4>Personal Portfolio</h4>
+
+          <p>
+            A modern portfolio built with React showcasing my projects, skills,
+            and experience as a Full Stack Developer.
+          </p>
+
+          <div className="project-buttons">
+            <a
+              href="https://yourportfolio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="live">Live Website</button>
+            </a>
+
+            <a
+              href="https://github.com/yourusername/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="github">GitHub</button>
+            </a>
+          </div>
+        </div>
+
+        {/* Project 4 */}
+
+        <div className="project-card">
+          <img src="" alt="Okrika Plug" className="project-image" />
+
+          <h2>Okrika Plug</h2>
+
+          <h4>MERN Marketplace</h4>
+
+          <p>
+            A marketplace for buying and selling thrift fashion. Currently
+            under active development using the MERN stack with secure
+            authentication and modern UI.
+          </p>
+
+          <div className="project-buttons">
+            <button className="coming">Coming Soon</button>
+
+            <a
+              href="https://github.com/yourusername/okrika-plug"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="github">GitHub</button>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
