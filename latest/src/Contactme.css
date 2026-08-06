@@ -1,0 +1,52 @@
+.contact{
+    margin-top:120px;
+    padding:80px;
+    text-align:center;
+}
+
+.contact-title{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.contact-subtitle{
+    color:#bdbdbd;
+    margin-bottom:50px;
+    font-size:18px;
+}
+
+.contact-info{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    width:300px;
+    background:#181818;
+    border:1px solid #444;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-6px);
+    border-color:orange;
+}
+
+.contact-card h3{
+    color:orange;
+    margin-bottom:15px;
+}
+
+.contact-card a{
+    color:white;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:orange;
+}

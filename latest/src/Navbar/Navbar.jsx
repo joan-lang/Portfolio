@@ -40,7 +40,7 @@ const Navbar = () => {
       },
       {
         threshold: 0.6,
-      }
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -61,9 +61,7 @@ const Navbar = () => {
 
         <ul className="nav-menu">
           <a href="#home" className="Link">
-            <li className={activeSection === "home" ? "active" : ""}>
-              Home
-            </li>
+            <li className={activeSection === "home" ? "active" : ""}>Home</li>
           </a>
 
           <a href="#services" className="Link">
@@ -73,9 +71,7 @@ const Navbar = () => {
           </a>
 
           <a href="#about" className="Link">
-            <li className={activeSection === "about" ? "active" : ""}>
-              About
-            </li>
+            <li className={activeSection === "about" ? "active" : ""}>About</li>
           </a>
 
           <a href="#skills" className="Link">
@@ -92,7 +88,9 @@ const Navbar = () => {
         </ul>
 
         <div className="nav-button">
-          <button className="btn">Let's Talk</button>
+          <a href="#contact">
+            <button className="btn">Let's Talk</button>
+          </a>
         </div>
       </nav>
     </header>
