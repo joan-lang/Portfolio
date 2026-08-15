@@ -14,10 +14,10 @@ const Skill = () => {
           <h2>Core Skills</h2>
 
           <div className="skill-tags">
-            <span>UI/UX Layout</span>
+            <span>MERN STACK</span>
             <span>Frontend Dev</span>
             <span>Responsive Web Design</span>
-            <span>Component-Based Design</span>
+            <span>React and java-script</span>
           </div>
         </div>
 
@@ -28,7 +28,7 @@ const Skill = () => {
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
-            <span>WordPress</span>
+            <span>React</span>
           </div>
         </div>
 
@@ -47,8 +47,6 @@ const Skill = () => {
 
           <div className="skill-tags">
             <span>GitHub</span>
-            <span>Netlify</span>
-            <span>GSAP</span>
             <span>UI Interactions</span>
           </div>
         </div>
