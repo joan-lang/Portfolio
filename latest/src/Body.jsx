@@ -32,10 +32,6 @@ const Body = () => {
       <section id="contact">
         <Contact />
       </section>
-
-      <section id="ThemeContext">
-        <ThemeContext/>
-      </section>
     </main>
   );
 };
