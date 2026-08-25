@@ -5,7 +5,6 @@ import Aboutme from "./Aboutme";
 import Skill from "./Skill";
 import Projects from "./Projects";
 import Contact from "./Contactme";
-import ThemeContext from "./ThemeContext";
 
 const Body = () => {
   return (
