@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "../App.css";
+import { useTheme } from "../ThemeContext";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
+
+  const { theme, toggleTheme } = useTheme();
 
   // Navbar scroll effect
   useEffect(() => {
@@ -40,7 +42,7 @@ const Navbar = () => {
       },
       {
         threshold: 0.6,
-      },
+      }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -55,13 +57,18 @@ const Navbar = () => {
       }`}
     >
       <nav className="nav-main">
+
+        {/* Logo */}
         <div className="nav-logo">
           <h3>A.J</h3>
         </div>
 
+        {/* Navigation Links */}
         <ul className="nav-menu">
           <a href="#home" className="Link">
-            <li className={activeSection === "home" ? "active" : ""}>Home</li>
+            <li className={activeSection === "home" ? "active" : ""}>
+              Home
+            </li>
           </a>
 
           <a href="#services" className="Link">
@@ -71,7 +78,9 @@ const Navbar = () => {
           </a>
 
           <a href="#about" className="Link">
-            <li className={activeSection === "about" ? "active" : ""}>About</li>
+            <li className={activeSection === "about" ? "active" : ""}>
+              About
+            </li>
           </a>
 
           <a href="#skills" className="Link">
@@ -87,11 +96,25 @@ const Navbar = () => {
           </a>
         </ul>
 
+        {/* Buttons */}
         <div className="nav-button">
+
+          {/* Light / Dark Mode Toggle */}
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label="Toggle light and dark mode"
+          >
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
+
+          {/* Let's Talk */}
           <a href="#contact">
             <button className="btn">Let's Talk</button>
           </a>
+
         </div>
+
       </nav>
     </header>
   );
