@@ -1,47 +1,63 @@
 .Projects {
   margin-top: 120px;
-  padding: 0 80px;
+  padding: 0 80px 100px;
 }
 
 .pv {
   text-align: center;
   font-size: 50px;
   margin-bottom: 10px;
+  color: var(--text-color);
 }
 
 .Show {
   text-align: center;
-  color: #cfcfcf;
+  color: var(--secondary-text);
   font-size: 18px;
   margin-bottom: 50px;
 }
 
+/* PROJECT GRID */
+
 .round {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 30px;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+/* PROJECT CARD */
+
 .WEB {
-  width: 340px;
-  background: #181818;
-  border: 1px solid #444;
+  width: 100%;
+
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
+
   border-radius: 18px;
   overflow: hidden;
-  transition: 0.3s;
+
+  transition: 0.3s ease;
 }
 
 .WEB:hover {
   transform: translateY(-8px);
-  border-color: orange;
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+
+/* PROJECT IMAGE */
 
 .project-image {
   width: 100%;
-  height: 220px;
+  height: 240px;
+
   object-fit: cover;
+  display: block;
 }
+
+/* PROJECT INFORMATION */
 
 .mk {
   padding: 20px;
@@ -50,65 +66,143 @@
 .mk h2 {
   font-size: 28px;
   margin-bottom: 10px;
+  color: var(--text-color);
 }
 
 .coMM {
-  color: orange;
+  color: var(--accent-color);
   margin-bottom: 15px;
   font-size: 16px;
 }
 
 .MODE {
-  color: #d9d9d9;
+  color: var(--secondary-text);
   line-height: 1.7;
   font-size: 15px;
+
   min-height: 110px;
 }
 
-/* Coming Soon Button */
+/* COMING SOON */
 
 .comingSoon {
   width: 100%;
+
   padding: 12px;
+
   border: none;
   border-radius: 10px;
+
   background: #555;
   color: white;
+
   font-size: 16px;
+
   cursor: not-allowed;
   font-weight: 600;
 }
 
-/* View Project Button */
+/* VIEW PROJECT */
 
 .viewProject {
+  display: block;
+
   width: 100%;
+  box-sizing: border-box;
+
   padding: 12px;
+
   border: none;
   border-radius: 10px;
-  background: white;
-  color: black;
+
+  background: var(--accent-color);
+  color: white;
+
   font-size: 16px;
   font-weight: 600;
+
+  text-align: center;
+  text-decoration: none;
+
   cursor: pointer;
-  transition: .3s;
+
+  transition: 0.3s ease;
 }
 
 .viewProject:hover {
-  background: orange;
-  color: white;
+  background: var(--accent-hover);
 }
 
-/* Responsive */
+/* TABLET */
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
+  .Projects {
+    padding: 0 40px 80px;
+  }
+
   .round {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .Projects {
+    margin-top: 80px;
+    padding: 0 20px 60px;
+  }
+
+  .pv {
+    font-size: 38px;
+  }
+
+  .Show {
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+
+  .round {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
   }
 
   .WEB {
-    width: 95%;
-    max-width: 380px;
+    width: 100%;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .mk {
+    padding: 18px;
+  }
+
+  .mk h2 {
+    font-size: 24px;
+  }
+
+  .MODE {
+    min-height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 400px) {
+  .Projects {
+    padding: 0 15px 50px;
+  }
+
+  .pv {
+    font-size: 32px;
+  }
+
+  .project-image {
+    height: 180px;
   }
 }

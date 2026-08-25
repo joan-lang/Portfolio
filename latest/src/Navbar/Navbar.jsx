@@ -103,7 +103,7 @@ const Navbar = () => {
           <button
             className="theme-toggle"
             onClick={toggleTheme}
-            aria-label="Toggle light and dark mode"
+             aria-label="Toggle theme"
           >
             {theme === "light" ? "🌙" : "☀️"}
           </button>
