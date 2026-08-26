@@ -4,7 +4,7 @@
 
 .Projects {
   margin-top: 120px;
-  padding: 0 50px 100px;
+  padding: 0 40px 100px;
 }
 
 
@@ -28,30 +28,33 @@
 
 
 /* ============================= */
-/* PROJECT GRID */
+/* PROJECT CARDS */
+/* ALL 4 STAY ON ONE ROW */
 /* ============================= */
 
 .round {
-  display: grid;
-
-  grid-template-columns: repeat(2, 300px);
-
+  display: flex;
   justify-content: center;
+  align-items: stretch;
 
-  gap: 25px;
+  gap: 18px;
 
-  max-width: 700px;
+  flex-wrap: nowrap;
+
+  width: 100%;
+  max-width: 1250px;
 
   margin: 0 auto;
 }
 
 
 /* ============================= */
-/* PROJECT CARD */
+/* CARD */
 /* ============================= */
 
 .WEB {
-  width: 300px;
+  width: 270px;
+  min-width: 0;
 
   background: var(--card-color);
 
@@ -80,7 +83,7 @@
 .project-image {
   width: 100%;
 
-  height: 180px;
+  height: 165px;
 
   object-fit: cover;
 
@@ -93,13 +96,13 @@
 /* ============================= */
 
 .mk {
-  padding: 16px;
+  padding: 15px;
 }
 
 .mk h2 {
-  font-size: 23px;
+  font-size: 21px;
 
-  margin: 0 0 8px;
+  margin: 0 0 7px;
 
   color: var(--text-color);
 }
@@ -107,21 +110,21 @@
 .coMM {
   color: var(--accent-color);
 
-  margin: 0 0 10px;
+  margin: 0 0 9px;
 
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .MODE {
   color: var(--secondary-text);
 
-  line-height: 1.6;
+  line-height: 1.5;
 
-  font-size: 13px;
+  font-size: 12px;
 
-  min-height: 90px;
+  min-height: 85px;
 
-  margin-bottom: 18px;
+  margin: 0 0 15px;
 }
 
 
@@ -142,7 +145,7 @@
 
   color: white;
 
-  font-size: 14px;
+  font-size: 13px;
 
   cursor: not-allowed;
 
@@ -151,7 +154,7 @@
 
 
 /* ============================= */
-/* VIEW PROJECT BUTTON */
+/* LIVE DEMO BUTTON */
 /* ============================= */
 
 .viewProject {
@@ -171,7 +174,7 @@
 
   color: white;
 
-  font-size: 14px;
+  font-size: 13px;
 
   font-weight: 600;
 
@@ -187,28 +190,68 @@
 .viewProject:hover {
   background: var(--accent-hover);
 
+  color: white;
+
   transform: translateY(-1px);
 }
 
 
 /* ============================= */
-/* TABLET */
+/* LARGE DESKTOP */
 /* ============================= */
 
-@media (max-width: 900px) {
-
-  .Projects {
-    padding: 0 30px 80px;
-  }
+@media (min-width: 1200px) {
 
   .round {
-    grid-template-columns: repeat(2, 290px);
-
     gap: 20px;
   }
 
   .WEB {
-    width: 290px;
+    width: 280px;
+  }
+
+  .project-image {
+    height: 175px;
+  }
+}
+
+
+/* ============================= */
+/* TABLET / SMALL DESKTOP */
+/* ============================= */
+
+@media (max-width: 1100px) {
+
+  .Projects {
+    padding: 0 20px 80px;
+  }
+
+  .round {
+    gap: 12px;
+  }
+
+  .WEB {
+    width: 230px;
+  }
+
+  .project-image {
+    height: 145px;
+  }
+
+  .mk {
+    padding: 13px;
+  }
+
+  .mk h2 {
+    font-size: 19px;
+  }
+
+  .coMM {
+    font-size: 12px;
+  }
+
+  .MODE {
+    font-size: 11px;
   }
 
 }
@@ -237,23 +280,19 @@
   }
 
   .round {
-    display: grid;
+    flex-direction: column;
 
-    grid-template-columns: 1fr;
+    align-items: center;
 
     gap: 25px;
 
     width: 100%;
-
-    max-width: none;
   }
 
   .WEB {
     width: 100%;
 
     max-width: 320px;
-
-    margin: 0 auto;
   }
 
   .project-image {
@@ -268,12 +307,22 @@
     font-size: 22px;
   }
 
-  .MODE {
-    min-height: auto;
-
-    margin-bottom: 18px;
+  .coMM {
+    font-size: 14px;
   }
 
+  .MODE {
+    font-size: 13px;
+
+    min-height: auto;
+
+    line-height: 1.6;
+  }
+
+  .comingSoon,
+  .viewProject {
+    font-size: 14px;
+  }
 }
 
 

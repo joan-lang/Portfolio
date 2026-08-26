@@ -1,52 +1,305 @@
-.contact{
-    margin-top:120px;
-    padding:80px;
-    text-align:center;
+/* ============================= */
+/* CONTACT SECTION */
+/* ============================= */
+
+.contact {
+  margin-top: 120px;
+
+  padding: 80px 50px 0;
+
+  text-align: center;
+
+  color: var(--text-color);
 }
 
-.contact-title{
-    font-size:48px;
-    margin-bottom:10px;
+
+/* ============================= */
+/* CONTACT TITLE */
+/* ============================= */
+
+.contact-title {
+  font-size: 48px;
+
+  margin-bottom: 10px;
+
+  color: var(--text-color);
 }
 
-.contact-subtitle{
-    color:#bdbdbd;
-    margin-bottom:50px;
-    font-size:18px;
+.contact-subtitle {
+  color: var(--secondary-text);
+
+  margin-bottom: 50px;
+
+  font-size: 18px;
 }
 
-.contact-info{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
+
+/* ============================= */
+/* CONTACT CARDS */
+/* ============================= */
+
+.contact-info {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
 }
 
-.contact-card{
-    width:300px;
-    background:#181818;
-    border:1px solid #444;
-    border-radius:20px;
-    padding:30px;
-    transition:.3s;
+.contact-card {
+  width: 300px;
+
+  background: var(--card-color);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  transition: 0.3s ease;
+
+  box-sizing: border-box;
 }
 
-.contact-card:hover{
-    transform:translateY(-6px);
-    border-color:orange;
+.contact-card:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--accent-color);
 }
 
-.contact-card h3{
-    color:orange;
-    margin-bottom:15px;
+.contact-card h3 {
+  color: var(--accent-color);
+
+  margin-bottom: 15px;
 }
 
-.contact-card a{
-    color:white;
-    text-decoration:none;
-    word-break:break-word;
+.contact-card a {
+  color: var(--text-color);
+
+  text-decoration: none;
+
+  word-break: break-word;
+
+  transition: 0.3s ease;
 }
 
-.contact-card a:hover{
-    color:orange;
+.contact-card a:hover {
+  color: var(--accent-color);
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.portfolio-footer {
+  margin-top: 100px;
+
+  padding: 45px 20px 25px;
+
+  border-top: 1px solid var(--border-color);
+
+  color: var(--text-color);
+}
+
+
+/* COPYRIGHT BUBBLE */
+
+.footer-logo {
+  width: 42px;
+
+  height: 42px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--accent-color);
+
+  background: var(--card-color);
+
+  color: var(--accent-color);
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+
+/* NAME */
+
+.portfolio-footer h3 {
+  margin: 0;
+
+  font-size: 20px;
+
+  color: var(--text-color);
+}
+
+
+/* JOB TITLE */
+
+.portfolio-footer p {
+  margin: 6px 0 20px;
+
+  font-size: 14px;
+
+  color: var(--secondary-text);
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  color: var(--secondary-text);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer-links span {
+  color: var(--accent-color);
+}
+
+
+/* LINE */
+
+.footer-line {
+  width: 100%;
+
+  max-width: 600px;
+
+  height: 1px;
+
+  background: var(--border-color);
+
+  margin: 0 auto 20px;
+}
+
+
+/* COPYRIGHT TEXT */
+
+.portfolio-footer small {
+  color: var(--secondary-text);
+
+  font-size: 12px;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 700px) {
+
+  .contact {
+    margin-top: 80px;
+
+    padding: 50px 20px 0;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-subtitle {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .contact-card {
+    width: 100%;
+
+    max-width: 320px;
+
+    padding: 25px 20px;
+  }
+
+  .portfolio-footer {
+    margin-top: 70px;
+
+    padding: 40px 15px 20px;
+  }
+
+  .portfolio-footer h3 {
+    font-size: 18px;
+  }
+
+  .footer-links {
+    gap: 10px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .portfolio-footer small {
+    font-size: 11px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 400px) {
+
+  .contact-title {
+    font-size: 31px;
+  }
+
+  .contact-subtitle {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    max-width: 100%;
+  }
+
+  .footer-logo {
+    width: 38px;
+
+    height: 38px;
+  }
+
 }

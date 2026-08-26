@@ -14,19 +14,15 @@
 /* ============================= */
 
 :root {
-  --bg-color: #f4f6f4;
+  --bg-color: #f4f4f2;
   --text-color: #111111;
   --secondary-text: #555555;
   --card-color: #ffffff;
-  --border-color: #d6ddd7;
+  --border-color: #d6d6d6;
 
-  /* ISOK Market green */
-  --accent-color: #2e8b57;
-  --accent-hover: #246b45;
+  --accent-color: orange;
+  --accent-hover: #e69500;
 }
-
-
-/* DARK MODE */
 
 [data-theme="dark"] {
   --bg-color: #0a0a0a;
@@ -35,8 +31,8 @@
   --card-color: #151515;
   --border-color: #292929;
 
-  --accent-color: #2e8b57;
-  --accent-hover: #3ca76b;
+  --accent-color: orange;
+  --accent-hover: #e69500;
 }
 
 

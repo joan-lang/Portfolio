@@ -5,6 +5,7 @@ import Aboutme from "./Aboutme";
 import Skill from "./Skill";
 import Projects from "./Projects";
 import Contact from "./Contactme";
+import Footer from "./Footer";
 
 const Body = () => {
   return (
@@ -32,6 +33,9 @@ const Body = () => {
       <section id="contact">
         <Contact />
       </section>
+
+        <Footer />
+
     </main>
   );
 };
